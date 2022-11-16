@@ -37,3 +37,19 @@ git restore --source {HASH} {FILE or .} ==> Restore the commit to an older commi
 /* GIT ADD */
 
 git add {FILE or .} ==> Add the files to the commit
+
+/* GIT CHECKOUT */
+
+git checkout -b {NAME} ==> Create a new branch
+
+/* GIT SWITCH */
+
+git switch {NAME} ==> Change the actual branch
+
+/* GIT BRANCH */
+
+git branch ==> Show all branchs available in the project and the actual branch selected
+
+/* GIT MERGE */
+
+git merge {BRANCH} ==> Merge the updates from the specific branch. Need to git push after to apply the updates
