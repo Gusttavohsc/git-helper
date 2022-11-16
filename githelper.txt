@@ -7,9 +7,15 @@ git log ==> shows all commits from the branch
 
 git log --online ==> shows all commits from the branch. Shows the hash and the commit message only.
 
+git log -p {FILE !optional} ==> Show the contend of each file in the commit log or the specific file
+
+git log --author="{AUTHOR NAME}" ==> Shows the commits from an specific author
+
+git log --since={NUMBER 0-9}.{DAY/MONTH/YEAR}.ago --until={NUMBER 0-9}.{DAY/MONTH/YEAR}.ago ==> Show the commits in a range of specifics dates
+
 /* GIT PULL */
 
-git pull {URL} ==> update actual branch without change the branch changes
+git pull   ==> update actual branch without change the branch changes
  
 
 /* GIT STATUS */
@@ -18,4 +24,16 @@ git status ==> shows the files that have been changed
 
 /* GIT COMMIT */
 
-git commit {FILE1 FILE2 !optional !file need to be on origin} {-m "MESSAGE" !optional}
+git commit {FILE1 or . !optional !file need to be on origin} {-m "MESSAGE" !optional} ==> Commit the files to the branch
+
+/* GIT PUSH */
+
+git push {{origin} {BRANCH} !optional} ==> Send the commits to the branch origin
+
+/* GIT RESTORE */
+
+git restore --source {HASH} {FILE or .} ==> Restore the commit to an older commit. Need to git commit and then git push to apply
+
+/* GIT ADD */
+
+git add {FILE or .} ==> Add the files to the commit
