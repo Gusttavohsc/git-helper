@@ -1,0 +1,21 @@
+Git Commands:
+
+
+/* GIT LOG */
+
+git log ==> shows all commits from the branch
+
+git log --online ==> shows all commits from the branch. Shows the hash and the commit message only.
+
+/* GIT PULL */
+
+git pull {URL} ==> update actual branch without change the branch changes
+ 
+
+/* GIT STATUS */
+
+git status ==> shows the files that have been changed
+
+/* GIT COMMIT */
+
+git commit {FILE1 FILE2 !optional !file need to be on origin} {-m "MESSAGE" !optional}
